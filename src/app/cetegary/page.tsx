@@ -81,7 +81,7 @@ export default function Page() {
       <div
         className={`${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } fixed md:static top-0 left-0 h-full w-96 bg-gray-100 shadow-lg transition-transform duration-300 z-40 md:translate-x-0 overflow-y-auto`}
+        } fixed md:static top-0 left-0 h-full w-64 md:w-96 bg-gray-100 shadow-lg transition-transform duration-300 z-40 md:translate-x-0 overflow-y-auto`}
       >
         <div className="p-4">
           <h2 className="font-bold text-lg mb-4">Filters</h2>
@@ -156,6 +156,13 @@ export default function Page() {
 
 
         {/* Product Grid */}
+        <div className="">
+        <div className="flex md:justify-between relative bottom-5 gap-x-3">
+          <h1 className="font-extrabold text-xl md:text-4xl ml-5 md:ml relative bottom-2">
+            Casual
+          </h1>
+          <p className="text-xs md:text-lg text-stone-400">Showing 1-10 of 100 Products</p>
+        </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4">
           {products.map((product, index) => (
             <div key={index} className="md:min-h-[256px]">
@@ -175,6 +182,7 @@ export default function Page() {
             </div>
           ))}
         </div>
+      </div>
       </div>
 
 
