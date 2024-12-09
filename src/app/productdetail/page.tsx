@@ -28,9 +28,9 @@ function page() {
     
 <div className="flex justify-center flex-col  md:flex md:flex-row space-y-5 gap-5 ml-5">
   <div className="flex order-2 md:order-1  md:block gap-5 space-y-2 mx-auto md:space-y-5 mt-5 ">
-  <Image src={img2} alt="first image" className='w-24'/> 
-  <Image src={img3} alt="first image" className='w-24' /> 
-  <Image src={img4} alt="first image" className='w-24'/> 
+  <Image src={img2} alt="first image" className='w-24 '/> 
+  <Image src={img3} alt="first image" className='w-24 ' /> 
+  <Image src={img4} alt="first image" className='w-24 '/> 
   </div>
     <div className=" order-1 md:order-2">
      <Image  className="mx-auto md:mx-none w-80 md:w-[450px]"  src={img} alt="second image" /> 
