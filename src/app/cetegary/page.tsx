@@ -1,6 +1,15 @@
+"use client"
+import React,{useState} from "react"
 import Image from "next/image";
+import { GiToggles } from "react-icons/gi";
 
 export default function Page() {
+  
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
   const products = [
     {
       name: "Gradient Graphic T-shirt",
@@ -54,96 +63,98 @@ export default function Page() {
     <div className="min-h-screen flex flex-col justify-between">
       {/* Main Content */}
       <div className="flex flex-col justify-center py-20 md:flex md:flex-row md:justify-center">
-        <div className="w-4/5 mx-auto md:mx-none rounded-xl md:w-full lg:w-1/4 bg-white dark:bg-gray-800 shadow-md p-6">
-          {/* Filters Header */}
-          <h2 className="font-bold text-xl text-gray-800 dark:text-white mb-6">Filters</h2>
 
-          {/* Category Filter */}
-          <div className="mb-8">
-            <h3 className="font-semibold text-lg text-gray-700 dark:text-gray-300 mb-4">Category</h3>
-            <ul className="space-y-3">
-              {["T-shirts", "Shorts", "Shirts", "Hoodies", "Jeans"].map((item) => (
-                <li key={item} className="flex items-center space-x-3">
-                  <input
-                    type="checkbox"
-                    id={item}
-                    className="w-5 h-5 text-blue-500 border-gray-300 focus:ring-0"
-                  />
-                  <label htmlFor={item} className="text-gray-600 dark:text-gray-300 text-sm cursor-pointer">
-                    {item}
-                  </label>
-                </li>
-              ))}
-            </ul>
-          </div>
 
-          {/* Price Filter */}
-          <div className="mb-8">
-            <h3 className="font-semibold text-lg text-gray-700 dark:text-gray-300 mb-4">Price</h3>
-            <div className="flex items-center space-x-4">
-              <span className="text-gray-600 dark:text-gray-300 text-sm">$50</span>
-              <input
-                type="range"
-                min="50"
-                max="200"
-                className="w-full bg-gray-200 dark:bg-gray-700 rounded-lg cursor-pointer"
-              />
-              <span className="text-gray-600 dark:text-gray-300 text-sm">$200</span>
+
+{/* Toggle Button (Visible on Small Screens) */}
+<div className="md:hidden flex justify-end pr-5">
+
+<button
+        className="md:hidden rounded-full border-2 w-14 text-black px-4 py-2 rlative top-16 left-80 z-30 flex justify-end"
+        onClick={handleToggle}
+        >
+        {isOpen ?<GiToggles /> : <GiToggles />}
+      </button>
+        </div>
+
+      {/* Sidebar */}
+      <div
+        className={`${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        } fixed md:static top-0 left-0 h-full w-96 bg-gray-100 shadow-lg transition-transform duration-300 z-40 md:translate-x-0 overflow-y-auto`}
+      >
+        <div className="p-4">
+          <h2 className="font-bold text-lg mb-4">Filters</h2>
+          <div className="space-y-6">
+            {/* Categories */}
+            <div>
+              <h3 className="text-sm font-medium mb-2">Categories</h3>
+              <ul className="space-y-2">
+                <li className="text-gray-700">T-shirts</li>
+                <li className="text-gray-700">Shorts</li>
+                <li className="text-gray-700">Shirts</li>
+                <li className="text-gray-700">Hoodies</li>
+                <li className="text-gray-700">Jeans</li>
+              </ul>
             </div>
-          </div>
 
-          {/* Color Filter */}
-          <div className="mb-8">
-            <h3 className="font-semibold text-lg text-gray-700 dark:text-gray-300 mb-4">Colors</h3>
-            <div className="flex flex-wrap items-center gap-4">
-              {[
-                { color: "red", class: "bg-red-500" },
-                { color: "green", class: "bg-green-500" },
-                { color: "blue", class: "bg-blue-500" },
-                { color: "yellow", class: "bg-yellow-500" },
-                { color: "pink", class: "bg-pink-500" },
-                { color: "black", class: "bg-black" },
-              ].map(({ color, class: colorClass }) => (
-                <div
-                  key={color}
-                  className={`w-8 h-8 rounded-full ${colorClass} cursor-pointer shadow-md`}
-                ></div>
-              ))}
+            {/* Price */}
+            <div>
+              <h3 className="text-sm font-medium mb-2">Price</h3>
+              <input type="range" min="50" max="200" className="w-full" />
             </div>
-          </div>
 
-          {/* Size Filter */}
-          <div className="mb-8">
-            <h3 className="font-semibold text-lg text-gray-700 dark:text-gray-300 mb-4">Sizes</h3>
-            <div className="flex flex-wrap items-center gap-3">
-              {[
-                "XX-Small",
-                "X-Small",
-                "Small",
-                "Medium",
-                "Large",
-                "X-Large",
-                "XX-Large",
-                "3X-Large",
-                "4X-Large",
-              ].map((size) => (
-                <button
-                  key={size}
-                  className="h-10 flex items-center w-20 rounded-full justify-center bg-stone-300 text-black dark:text-white text-sm hover:bg-gray-300"
-                >
-                  {size}
-                </button>
-              ))}
+            {/* Colors */}
+            <div>
+              <h3 className="text-sm font-medium mb-2">Colors</h3>
+              <div className="flex gap-2">
+                <div className="w-6 h-6 bg-red-500 rounded-full"></div>
+                <div className="w-6 h-6 bg-blue-500 rounded-full"></div>
+                <div className="w-6 h-6 bg-green-500 rounded-full"></div>
+                <div className="w-6 h-6 bg-yellow-500 rounded-full"></div>
+              </div>
             </div>
-          </div>
 
-          {/* Apply Button */}
-          <div className="text-center">
-            <button className="w-full bg-black text-white font-medium py-2 rounded-full hover:bg-gray-800 transition duration-300">
+            {/* Size */}
+            <div>
+              <h3 className="text-sm font-medium mb-2">Size</h3>
+              <div className="flex flex-wrap gap-2">
+                <button className="px-2 text-xs py-1 bg-stone-300 border rounded-full">XX-Small</button>
+                <button className="px-2 text-xs py-1 bg-stone-300 border rounded-full">X-Small</button>
+                <button className="px-2 text-xs py-1 bg-stone-300 border rounded-full ">Small   </button>
+                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full">Medium</button>
+                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full">Large</button>
+                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full">X-Large</button>
+                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full">XX-Large</button>
+                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full">3X-Large</button>
+                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full">4X-Large</button>
+              </div>
+            </div>
+
+            {/* Dress Style */}
+            <div>
+              <h3 className="text-sm font-medium mb-2">Dress Style</h3>
+              <ul className="space-y-2">
+                <li className="text-gray-700">Casual</li>
+                <li className="text-gray-700">Formal</li>
+                <li className="text-gray-700">Party</li>
+                <li className="text-gray-700">Gym</li>
+              </ul>
+            </div>
+
+            {/* Apply Filters Button */}
+            <button className="w-full py-2 bg-black text-white rounded-full">
               Apply Filters
             </button>
           </div>
         </div>
+      </div>
+
+
+
+
+
+
         {/* Product Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4">
           {products.map((product, index) => (
@@ -175,3 +186,7 @@ export default function Page() {
     </div>
   );
 }
+
+
+
+
