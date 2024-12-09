@@ -1,4 +1,3 @@
-import  Link from "next/link"
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoIosSearch } from "react-icons/io";
 import { CgProfile } from "react-icons/cg";
