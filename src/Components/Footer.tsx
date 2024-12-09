@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 //  import img1 from "../../public/assestsHome/Framea1.png"
 
 export default function Footer() {
