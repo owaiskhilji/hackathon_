@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+}
+.main{
+  padding-left: 5%;
+}
+.ser-div{
+position:relative;
+right:60px
+}
+.Inp{
+  border: 1px black solid;
+  border-radius: 20px;
+  height: 40px;
+}
+
+.opt{
+  outline: none;
+}
+.navbar-center{
+  margin-right: 120px;
+}
+.Btn{
+  border: 1px solid;
+  border-radius : 30px
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
