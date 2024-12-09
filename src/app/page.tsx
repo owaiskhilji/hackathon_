@@ -53,7 +53,7 @@ export default function Home() {
           <Image
             src={img}
             alt="login-image"
-            className="object-contain w-full h-full md:h-[600px] md:w-auto"
+            className="object-contain mb-5 w-full h-full md:h-[600px] md:w-auto"
           />
           
         </div>
@@ -61,7 +61,7 @@ export default function Home() {
 
     </div>
     <div className="border-b-4 border-t-4 border-yellow-600">
-<div className="navbar bg-black text-neutral-content flex flex-wrap justify-around">
+<div className="navbar bg-black text-neutral-content flex flex-wrap md:flex  md:justify-around">
 <h1 className="text-2xl font-bold text-white">VERSACE</h1>
 <h1 className="text-2xl font-bold text-white">ZNA</h1>
 <h1 className="text-2xl font-bold text-white">GUCCI</h1>

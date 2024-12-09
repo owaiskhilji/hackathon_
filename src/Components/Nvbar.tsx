@@ -30,10 +30,11 @@ export default function Nvbar() {
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
         <li>
           <a>Shop</a>
-          <ul className="p-2">
+          <ul className="p-2 z-10">
           <li><a href={"/"}>Home</a></li>
-            <li><a href={"/cetegary"}>crousal</a></li>
-            <li><a href={"/cart"}>your cart</a></li>
+            <li><a href={"/productdetail"}>ProductDetail</a></li>
+            <li><a href={"/cetegary"}>Cetegary</a></li>
+            <li><a href={"/cart"}>Cart</a></li>
           </ul>
         </li>
         <li><a>On Sale</a></li>
@@ -49,10 +50,11 @@ export default function Nvbar() {
       <li>
         <details>
           <summary>Shop</summary>
-          <ul className="p-2">
+          <ul className="p-2 ">
             <li><a href={"/"}>Home</a></li>
-            <li><a href={"/cetegary"}>crousal</a></li>
-            <li><a href={"/cart"}>your cart</a></li>
+            <li><a href={"/productdetail"}>ProductDetail</a></li>
+            <li><a href={"/cetegary"}>Cetegary</a></li>
+            <li><a href={"/cart"}>Cart</a></li>
           </ul>
         </details>
       </li>
@@ -62,12 +64,12 @@ export default function Nvbar() {
     </ul>
   </div>
       <div className="ser-div flex items-center gap-4 ">
-        <div className="Inp hidden md:flex items-center  px-2">
+        <div className="Inp hidden md:flex items-center bg-stone-300 px-2">
           <RiSearchFill size={20} className="text-gray-500" />
           <input
             type="text"
             placeholder="Search"
-            className="input input-bordered w-[400px] md:w-[600px] border-0 h-5 focus:outline-none"
+            className="input input-bordered bg-stone-300 w-[400px] md:w-[600px] border-0 h-5 focus:outline-none"
           />
         </div>
 
