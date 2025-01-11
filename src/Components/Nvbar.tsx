@@ -1,4 +1,8 @@
- import '@/app/globals.css'
+import { MdOutlineShoppingCart } from "react-icons/md";
+import { IoIosSearch } from "react-icons/io";
+import { CgProfile } from "react-icons/cg";
+import { RiSearchFill } from "react-icons/ri";
+
 export default function Nvbar() {
   return (
 
@@ -38,11 +42,11 @@ export default function Nvbar() {
       <li><a>Brands</a></li>
       </ul>
         </div>
-        <a className="font-extrabold text-xl md:text-3xl text-black">SHOP.CO</a>
+        <a className="flex justify-end font-extrabold text-xl md:text-2xl text-black">SHOP.CO</a>
       </div>
 
-      <div className="navbar-center hidden lg:flex">
-    <ul className="menu menu-horizontal px-1">
+      <div className="navbar-center hidden lg:flex ">
+    <ul className="menu menu-horizontal px-1 relation right-20">
       <li>
         <details>
           <summary>Shop</summary>
@@ -61,7 +65,7 @@ export default function Nvbar() {
   </div>
       <div className="ser-div flex items-center gap-4 ">
         <div className="Inp hidden md:flex items-center  px-2">
-          {/* <RiSearchFill size={20} className="text-gray-500" /> */}
+          <RiSearchFill size={20} className="text-gray-500" />
           <input
             type="text"
             placeholder="Search"
@@ -69,7 +73,7 @@ export default function Nvbar() {
           />
         </div>
 
-        {/* <ul className="flex items-center md:space-x-4 ">
+        <ul className="flex items-center md:space-x-4 ">
           <li className="block sm:hidden w-4 h-4 mr-3">
             <IoIosSearch size={25}/>
           </li>
@@ -79,7 +83,7 @@ export default function Nvbar() {
           <li className="w-4 h-4 md:w-full md:h-full">
             <CgProfile size={25}/>
           </li>
-        </ul> */}
+        </ul>
       </div>
       </div>
   );
