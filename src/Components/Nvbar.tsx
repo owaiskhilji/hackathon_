@@ -9,7 +9,7 @@ export default function Nvbar() {
 <div className="main navbar bg-white shadow-md border-b-2 w-full ">
       <div className="flex-1 ">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost md:hidden lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -69,12 +69,12 @@ export default function Nvbar() {
           <input
             type="text"
             placeholder="Search"
-            className="input input-bordered w-[400px] md:w-[600px] border-0 h-5 focus:outline-none"
+            className="input input-bordered w-[400px] md:w-[600px] border-0 h-5 outline-none"
           />
         </div>
 
         <ul className="flex items-center md:space-x-4 ">
-          <li className="block sm:hidden w-4 h-4 mr-3">
+          <li className="block sm:hidden md:hidden w-4 h-4 mr-3">
             <IoIosSearch size={25}/>
           </li>
           <li className="w-4 h-4 md:w-full md:h-full mr-3">
