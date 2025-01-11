@@ -81,7 +81,7 @@ export default function Page() {
       <div
         className={`${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } fixed md:static top-0 left-0 h-full w-64 md:w-96 bg-gray-100 shadow-lg transition-transform duration-300 z-40 md:translate-x-0 overflow-y-auto`}
+        } fixed md:static top-0 left-0 h-full w-64 md:w-96 bg-gray-100 shadow-lg transition-transform duration-300 md:translate-x-0 overflow-y-auto`}
       >
         <div className="p-4">
           <h2 className="font-bold text-lg mb-4">Filters</h2>
@@ -119,15 +119,15 @@ export default function Page() {
             <div>
               <h3 className="text-sm font-medium mb-2">Size</h3>
               <div className="flex flex-wrap gap-2">
-                <button className="px-2 text-xs py-1 bg-stone-300 border rounded-full">XX-Small</button>
-                <button className="px-2 text-xs py-1 bg-stone-300 border rounded-full">X-Small</button>
-                <button className="px-2 text-xs py-1 bg-stone-300 border rounded-full ">Small   </button>
-                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full">Medium</button>
-                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full">Large</button>
-                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full">X-Large</button>
-                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full">XX-Large</button>
-                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full">3X-Large</button>
-                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full">4X-Large</button>
+                <button className="px-2 text-xs py-1 bg-stone-300 border rounded-full hover:bg-black hover:text-white">XX-Small</button>
+                <button className="px-2 text-xs py-1 bg-stone-300 border rounded-full hover:bg-black hover:text-white">X-Small</button>
+                <button className="px-2 text-xs py-1 bg-stone-300 border rounded-full hover:bg-black hover:text-white ">Small   </button>
+                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full hover:bg-black hover:text-white">Medium</button>
+                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full hover:bg-black hover:text-white">Large</button>
+                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full hover:bg-black hover:text-white">X-Large</button>
+                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full hover:bg-black hover:text-white">XX-Large</button>
+                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full hover:bg-black hover:text-white">3X-Large</button>
+                <button className="px-2 py-1 text-xs bg-stone-300 border rounded-full hover:bg-black hover:text-white">4X-Large</button>
               </div>
             </div>
 

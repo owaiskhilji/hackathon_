@@ -1,12 +1,8 @@
-import { MdOutlineShoppingCart } from "react-icons/md";
-import { IoIosSearch } from "react-icons/io";
-import { CgProfile } from "react-icons/cg";
-import { RiSearchFill } from "react-icons/ri";
  import '@/app/globals.css'
 export default function Nvbar() {
   return (
 
-<div className="main navbar  bg-white shadow-md border-b-2 w-full ">
+<div className="main navbar bg-white shadow-md border-b-2 w-full ">
       <div className="flex-1 ">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -27,10 +23,10 @@ export default function Nvbar() {
           </div>
           <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow z-1">
         <li>
           <a>Shop</a>
-          <ul className="p-2">
+          <ul className="p-2 ">
           <li><a href={"/"}>Home</a></li>
           <li><a href={"/productdetail"}>Product detail</a></li>
             <li><a href={"/cetegary"}>Category</a></li>
@@ -65,7 +61,7 @@ export default function Nvbar() {
   </div>
       <div className="ser-div flex items-center gap-4 ">
         <div className="Inp hidden md:flex items-center  px-2">
-          <RiSearchFill size={20} className="text-gray-500" />
+          {/* <RiSearchFill size={20} className="text-gray-500" /> */}
           <input
             type="text"
             placeholder="Search"
@@ -73,7 +69,7 @@ export default function Nvbar() {
           />
         </div>
 
-        <ul className="flex items-center md:space-x-4 ">
+        {/* <ul className="flex items-center md:space-x-4 ">
           <li className="block sm:hidden w-4 h-4 mr-3">
             <IoIosSearch size={25}/>
           </li>
@@ -83,7 +79,7 @@ export default function Nvbar() {
           <li className="w-4 h-4 md:w-full md:h-full">
             <CgProfile size={25}/>
           </li>
-        </ul>
+        </ul> */}
       </div>
       </div>
   );
