@@ -8,7 +8,7 @@ export default function Footer() {
   return (
 <div >
 
-<div className=" block px-12 py-10 space-y-5 md:flex md:justify-between items-center border-2 mx-auto rounded-2xl w-64 md:w-[1300px] md:h-[200px]  bg-black">
+<div className=" block px-20 py-14 space-y-5 md:flex md:justify-between items-center border-2 mx-auto rounded-2xl w-64 md:w-[1300px] md:h-[200px]  bg-black">
     <div className="font-bold text-2xl md:text-4xl text-white md:w-[600px]">
       STAY UPTO DATE ABOUT OUR LATEST OFFERS
     </div>

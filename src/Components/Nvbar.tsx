@@ -46,7 +46,7 @@ export default function Nvbar() {
       </div>
 
       <div className="navbar-center hidden md:flex lg:flex ">
-    <ul className="menu menu-horizontal px-1 relation right-20">
+    <ul className="menu menu-horizontal px-1 relation right-20 md:flex">
       <li>
         <details>
           <summary>Shop</summary>
@@ -64,12 +64,12 @@ export default function Nvbar() {
     </ul>
   </div>
       <div className="ser-div flex items-center gap-4 ">
-        <div className="Inp hidden md:flex items-center  px-2">
+        <div className="Inp hidden md:flex items-center md:w-[700px] pl-4">
           <RiSearchFill size={20} className="text-gray-500" />
           <input
             type="text"
             placeholder="Search"
-            className="input input-bordered w-[400px] md:w-[600px] border-0 h-5 outline-none"
+            className="outline-none w-full"
           />
         </div>
 
