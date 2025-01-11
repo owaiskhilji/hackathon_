@@ -8,8 +8,7 @@ export default function Footer() {
   return (
 <div >
 
-<div className="flex justify-center items-center  min-h-screen relative top-32 md:relative md:top-48" >
-  <div className=" block px-12 py-10 space-y-5 md:flex md:justify-between items-center border-2 mx-auto rounded-2xl w-64 md:w-[1300px] md:h-[200px] bg-black ">
+<div className=" block px-12 py-10 space-y-5 md:flex md:justify-between items-center border-2 mx-auto rounded-2xl w-64 md:w-[1300px] md:h-[200px]  bg-black">
     <div className="font-bold text-2xl md:text-4xl text-white md:w-[600px]">
       STAY UPTO DATE ABOUT OUR LATEST OFFERS
     </div>
@@ -35,11 +34,11 @@ export default function Footer() {
         className="text-center text-sm rounded-full border px-4 py-2 w-full max-w-[300px]"
       />
     </div>
-  </div>
 </div>
-{/* footer */}
-    <div className="w-full">
-      <footer className="font-sans tracking-wide bg-gray-300 px-10 pt-32">
+
+
+
+<footer className="font-sans tracking-wide bg-gray-300 px-10 py-20">
     <div className="flex flex-wrap justify-between gap-10">
       <div className="max-w-md">
         <a href="javascript:void(0)">
@@ -138,7 +137,8 @@ export default function Footer() {
       </ul>
 
     </div>
-  </footer></div>
-</div>
-  )
+  </footer>
+ 
+   </div> 
+ )
 }

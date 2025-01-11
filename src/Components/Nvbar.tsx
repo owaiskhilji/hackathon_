@@ -8,8 +8,8 @@ export default function Nvbar() {
 
 <div className="main navbar bg-white shadow-md border-b-2 w-full ">
       <div className="flex-1 ">
-        <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost md:hidden lg:hidden">
+        <div className="dropdown md:hidden">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -27,7 +27,7 @@ export default function Nvbar() {
           </div>
           <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow z-1">
+        className="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow z-1 md:hidden">
         <li>
           <a>Shop</a>
           <ul className="p-2 ">
@@ -45,7 +45,7 @@ export default function Nvbar() {
         <a className="flex justify-end font-extrabold text-xl md:text-2xl text-black">SHOP.CO</a>
       </div>
 
-      <div className="navbar-center hidden lg:flex ">
+      <div className="navbar-center hidden md:flex lg:flex ">
     <ul className="menu menu-horizontal px-1 relation right-20">
       <li>
         <details>
