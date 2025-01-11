@@ -42,7 +42,7 @@ export default function Nvbar() {
       <li><a>Brands</a></li>
       </ul>
         </div>
-        <a className="font-extrabold text-3xl text-black">SHOP.CO</a>
+        <a className="font-extrabold text-xl md:text-3xl text-black">SHOP.CO</a>
       </div>
 
       <div className="navbar-center hidden lg:flex">
@@ -73,15 +73,15 @@ export default function Nvbar() {
           />
         </div>
 
-        <ul className="flex items-center space-x-4 ">
-          <li className="block sm:hidden">
-            <IoIosSearch size={25} />
+        <ul className="flex items-center md:space-x-4 ">
+          <li className="block sm:hidden w-4 h-4 mr-3">
+            <IoIosSearch size={25}/>
           </li>
-          <li>
-            <MdOutlineShoppingCart size={25} />
+          <li className="w-4 h-4 md:w-full md:h-full mr-3">
+            <MdOutlineShoppingCart size={25}/>
           </li>
-          <li>
-            <CgProfile size={25} />
+          <li className="w-4 h-4 md:w-full md:h-full">
+            <CgProfile size={25}/>
           </li>
         </ul>
       </div>

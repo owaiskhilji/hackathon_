@@ -18,31 +18,32 @@ import "./globals.css";
 export default function Home() {
   return (
     <div>
-    <div className="w-full h-full md:h-[600px] bg-customGray md:flex md:items-center space-y-8 pt-5">
+    <div className="w-full bg-customGray">
+    <div className="max-w-full md:max-w-full h-full md:h-[600px] md:flex md:items-center space-y-8 pt-5">
       <div className="block md:flex justify-center w-full px-10 items-center mx-auto">
 
         <div className="rounded-md max-w-lg space-y-6">
-          <h1 className="text-4xl md:text-5xl font-extrabold">
+          <h1 className="text-2xl md:text-5xl font-extrabold">
             FIND CLOTHES THAT MATCHES YOUR STYLE
           </h1>
-          <p className="text-stone-500">
+          <p className="text-sm md:text-md text-stone-500">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <button className="Btn btn bg-black text-xs text-white px-4 py-2 w-96 md:w-44">
+          <button className="Btn btn bg-black ml-auto w-64 text-xs text-white px-2 md:px-4 md:py-2 md:w-44">
             Shop Now
           </button>
         </div>
-        <div className="flex flex-row flex-wrap space-x-8 space-y-5 justify-center items-center md:hidden">
+        <div className="flex flex-row flex-wrap justify-center md:hidden mt-5 ml-5">
   <div>
-    <h1 className="text-5xl font-semibold relative top-3">200+</h1>
-    <p className="text-xs text-stone-500 relative top-3">International Brands</p>
+    <h1 className="text-3xl md:text-5xl font-semibold ">200+</h1>
+    <p className="text-xs text-stone-500 ">International Brands</p>
   </div>
   <div>
-    <h1 className="text-5xl font-semibold">2,000+</h1>
+    <h1 className="text-3xl md:text-5xl font-semibold">2,000+</h1>
     <p className="text-xs text-stone-500">High-Quality Products</p>
   </div>
-  <div>
-    <h1 className="text-5xl font-semibold">30,000+</h1>
+  <div className="mt-3">
+    <h1 className="text-3xl md:text-5xl font-semibold">30,000+</h1>
     <p className="text-xs text-stone-500">Happy Customers</p>
   </div>
 </div>
@@ -60,13 +61,14 @@ export default function Home() {
       </div> 
 
     </div>
+    </div>
     <div className="border-b-4 border-t-4 border-yellow-600">
-<div className="navbar bg-black text-neutral-content flex flex-wrap md:flex  md:justify-around">
-<h1 className="text-2xl font-bold text-white">VERSACE</h1>
-<h1 className="text-2xl font-bold text-white">ZNA</h1>
-<h1 className="text-2xl font-bold text-white">GUCCI</h1>
-<h1 className="text-2xl font-bold text-white">PRADA</h1>
-<h1 className="text-2xl font-bold text-white">Colvin Klein</h1>
+<div className="navbar bg-black space-y-2 text-neutral-content flex flex-wrap  md:flex justify-around">
+<h1 className="text-xl md:text-2xl md:font-bold text-white">VERSACE</h1>
+<h1 className="text-xl md:text-2xl md:font-bold text-white">ZNA</h1>
+<h1 className="text-xl md:text-2xl md:font-bold text-white">GUCCI</h1>
+<h1 className="text-xl md:text-2xl md:font-bold text-white">PRADA</h1>
+<h1 className="text-xl md:text-2xl md:font-bold text-white">Colvin Klein</h1>
 </div>
      </div>
 
@@ -265,10 +267,10 @@ NEW ARRIVALS
 
 
 <br/>
-<div className="border-2 space-y-4 rounded-xl flex flex-col justify-center md:justify-center bg-Gray w-96 md:w-[1300px] mx-auto md:h-[1000px] items-center px-10 py-5 md:py-0">
+<div className="border-2 space-y-4 rounded-xl flex flex-col justify-center md:justify-center bg-Gray w-80 md:w-[1300px] mx-auto md:h-[1000px] items-center px-10 py-5 md:py-0">
 <h1 className="text-3xl md:text-5xl font-extrabold ml-8">BROWSE BY DRESS STYLE</h1>
 <div className="block md:flex md:flex-row space-y-5 md:space-x-5 md:space-y-0">
-<div className="card bg-base-100 w-80 md:w-96 h-72 md:h-96 shadow-xl">
+<div className="card bg-base-100 w-64 md:w-96 h-72 md:h-96 shadow-xl">
   <Image
             src={imgb1}
             alt="login-image"
@@ -276,7 +278,7 @@ NEW ARRIVALS
           />
  
   </div>
-<div className="card bg-base-100  h-72 md:h-96 shadow-xl">
+<div className="card bg-base-100 w-64 md:w-none h-72 md:h-96 shadow-xl">
   
   <Image
             src={imgb2}
@@ -291,7 +293,7 @@ NEW ARRIVALS
 
 
 <div className="block md:flex space-y-5 md:space-x-5 md:space-y-0">
-<div className="card bg-base-100  h-72 md:h-96 shadow-xl">
+<div className="card bg-base-100 w-64 md:w-none h-72 md:h-96 shadow-xl">
   <Image
             src={imgb4}
             alt="login-image"
@@ -299,7 +301,7 @@ NEW ARRIVALS
           />
  
   </div>
-<div className="card bg-base-100 w-80 md:w-96 h-72 md:h-96 shadow-xl">
+<div className="card bg-base-100 w-64 md:w-96 h-72 md:h-96 shadow-xl">
   
   <Image
             src={imgb3}
@@ -312,7 +314,6 @@ NEW ARRIVALS
 </div>
 
 </div>
-
 
 
 

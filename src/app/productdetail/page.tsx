@@ -6,11 +6,9 @@ import img3 from "../../../public/productDetail/image 5.png"
 import img4 from "../../../public/productDetail/image 6.png"
 import img5 from "../../../public/productDetail/Frame 11.png"
 import img8 from "../../../public/productDetail/Frame 77.png"
-import img9 from "../../../public/productDetail/Frame 17.png"
 import img112 from "../../../public/productDetail/Frame 22.png"
 import img11 from "../../../public/productDetail/Frame 23.png"
 
-import img10 from "../../../public/productDetail/Frame 21.png"
 import img113 from "../../../public/productDetail/Frame 24.png"
 import img114 from "../../../public/productDetail/Frame 25.png"
 import img115 from "../../../public/productDetail/Frame 26.png"
@@ -27,25 +25,25 @@ function page() {
   <div className="block space-y-10 md:space-y-5 justify-evenly md:flex gap-5 mt-5">
     
 <div className="flex justify-center flex-col  md:flex md:flex-row space-y-5 gap-5 ml-5">
-  <div className="flex order-2 md:order-1  md:block gap-5 space-y-2 mx-auto md:space-y-5 mt-5 ">
-  <Image src={img2} alt="first image" className='w-24 '/> 
-  <Image src={img3} alt="first image" className='w-24 ' /> 
-  <Image src={img4} alt="first image" className='w-24 '/> 
+  <div className="flex order-2 md:order-1 gap-4 md:block space-y-1 mx-auto md:space-y-7 mt-5 ">
+  <Image src={img2} alt="first image" className='w-20 md:w-36'/> 
+  <Image src={img3} alt="first image" className='w-20 md:w-36' /> 
+  <Image src={img4} alt="first image" className='w-20 md:w-36'/> 
   </div>
-    <div className=" order-1 md:order-2">
-     <Image  className="mx-auto md:mx-none w-80 md:w-[450px]"  src={img} alt="second image" /> 
+      <div className="mx-auto md:mx-none order-1 md:order-2">
+     <Image  className=" w-72 md:w-[450px]" src={img} alt="second image" /> 
     </div>
   </div>
   {/* card data */}
   <div className="space-y-5 ml-14 md:ml-5">
-    <h1 className="font-bold text-xl md:text-3xl ">ONE LIFE GRAPHIC T-SHIRT</h1>
+    <h1 className="font-bold text-lg md:text-3xl ">ONE LIFE GRAPHIC T-SHIRT</h1>
   <Image src={img5} alt=""/> 
   <div className="flex gap-5">
     <h1 className="font-extrabold text-2xl">$260</h1>
     < h1 className="font-extrabold text-2xl text-gray-300"> <del>$360</del></h1> 
     <h1 className="w-16 px-2 pt-1 bg-red-200 font-bold text-xl text-red-500 border-2 rounded-full">-40%</h1>
     </div>  
-  <p className="w-80 md:w-[500px] ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda accusamus possimus venia</p>
+  <p className="w-52 md:w-[500px] ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda accusamus possimus venia</p>
  
   <div className="space-y-4">
     <h1>Select Colour</h1>
@@ -54,34 +52,41 @@ function page() {
   <hr className='w-52'/>
     <h1>Choose size</h1>
   <div className="flex justify-between md:space-x-3 pr-3">
-    <button className="btn hover:bg-black hover:text-white text-gray-500 rounded-2xl w-16 md:w-28">Small</button>
-    <button className="btn hover:bg-black hover:text-white text-gray-500 rounded-2xl w-16 md:w-28">Medium</button>
-    <button className="btn bg-black hover:bg-black hover:text-white text-white rounded-2xl w-16 md:w-28">Large</button>
-    <button className="btn hover:bg-black hover:text-white text-gray-500 rounded-2xl w-16 md:w-28">X-Large</button>
+    <button className="btn btn-sm text-xs hover:bg-black hover:text-white text-gray-600 rounded-full w-14 md:w-28">Small</button>
+    <button className="btn btn-sm text-xs hover:bg-black hover:text-white text-gray-600 rounded-full w-14 md:w-28">Medium</button>
+    <button className="btn btn-sm text-xs hover:bg-black hover:text-white text-gray-600 rounded-full w-14 md:w-28">Large</button>
+    <button className="btn btn-sm text-xs hover:bg-black hover:text-white text-gray-600 rounded-full w-14 md:w-28">X-Large</button>
     
   </div>
   <hr className='w-52'/>
-  <div className="flex space-x-8 pr-2 md:px-0">
-  <Image src={img9} alt=""/>
-  <button className="btn bg-black hover:bg-black hover:text-white text-white rounded-full w-52  md:w-96 lg:w-96">add to cart</button> 
-  </div>
-  </div>
+  <div className="flex flex-row md:flex-row items-center md:justify-between w-full">
+  <div 
+    className="font-[sans-serif] w-max border-2 border-[#333] rounded-full overflow-hidden flex mr-4">
+      <button type="button"
+        className="w-4 md:w-full bg-gray-300 px-5 py-2.5 text-[#333] text-sm md:text-xl tracking-wider font-semibold border-r-2 border-[#333] outline-none hover:bg-[#333] hover:text-white transition-all">-</button>
+      <button
+        className="w-4 md:w-full bg-gray-300  px-5 py-2.5 text-[#333] text-sm md:text-xl font-semibold border-r-2 border-[#333] outline-none">1</button>
+      <button type="button"
+        className="w-4 md:w-full bg-gray-300  px-5 py-2.5 text-[#333] text-sm md:text-xl tracking-wider font-semibold border-none outline-none hover:bg-[#333] hover:text-white transition-all">+</button>
+    </div>
+    <div>
+      <button className="btn h-4 bg-black hover:bg-black hover:text-white text-white rounded-full  w-32 md:w-72 lg:w-72">add to cart</button> 
+    </div>
+    </div>
+</div>
+
 
 </div>
 {/* detail */}
 <div>
-  <div className='px-3 md:px-0'>
-    <ul className="flex justify-evenly mt-16">
-      <li>product detail</li>
-      <li className="font-bold text-xl ">Rating & Reviews</li>
-      <li>FAQs</li>
-    </ul>
+  <div className='flex justify-center md:justify-start mt-5 mx-auto w-80 md:w-full md:ml-6'>
+    <p className='text-black text-sm md:text-lg'>product detail <span className='font-bold text-lg md:text-2xl'>Rating & Reviews</span> FAQs</p>
   </div>
   <hr className="mt-5 w-52 ml-8"/>
   <div className='px-6 md:px-0'>
     <ul className="ml-5 md:ml-10 mr-0 md:mr-10 mt-5 flex justify-between">
-      <li className="flex"><h1 className="font-bold text-2xl ">All Reviews</h1><h1 className="pt-1">(451)</h1></li>
-      <li><Image src={img10} alt=""/> </li>
+      <li className="flex"><h1 className="font-bold text-2xl ">All Reviews <sup className="text-sx">(431)</sup></h1>
+      </li>
     </ul>
   </div>
 </div>
@@ -100,7 +105,7 @@ function page() {
 <Image className="w-96 md:w-[700px]" src={img116} alt=""/>
 </div>
 </div>
-<div  className="flex justify-center mt-10"><button className="btn rounded-full bg-white">lead more reviews</button></div>
+<div  className="flex justify-center mt-10"><button className="btn rounded-full bg-white outline">lead more reviews</button></div>
 {/* black card */}
 <div>
 <h1 className="font-extrabold mt-10 flex justify-center text-2xl md:text-4xl ">
@@ -190,7 +195,7 @@ YOU MIGHT ALSO LIKE
     </div>
     </div>
 </div>
-<div className="navbar bg-white text-neutral-content border-b border-t border-black mx-auto">
+<div className="navbar bg-white text-neutral-content border-b border-t border-black mx-auto mt-5">
   <button className="text-xl text-black mx-auto">veiw All</button>
 </div>
 </div>

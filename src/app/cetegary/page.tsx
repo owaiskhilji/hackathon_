@@ -161,7 +161,7 @@ export default function Page() {
           <h1 className="font-extrabold text-xl md:text-4xl ml-5 md:ml relative bottom-2">
             Casual
           </h1>
-          <p className="text-xs md:text-lg text-stone-400">Showing 1-10 of 100 Products</p>
+          <p className="text-xs md:text-lg text-stone-400 w-24 md:w-full">Showing 1-10 of 100 Products</p>
         </div>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 gap-4 p-4">
           {products.map((product, index) => (
@@ -184,13 +184,6 @@ export default function Page() {
         </div>
       </div>
       </div>
-
-
-      {/* Footer */}
-      <footer className=" text-white py-2">
-        <div className="text-center">
-        </div>
-      </footer>
     </div>
   );
 }
